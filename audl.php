@@ -45,7 +45,7 @@ function resetProgress() {
 	document.getElementById('percent').innerHTML = '0%';
 	document.getElementById('progress').style.width = '0%';
 	document.getElementById('speed').innerHTML = '0 KB/s';
-	document.title = 'RAPIDLEECH PLUGMOD - Auto Download';
+	document.title = 'MEH';
 }
 /* ]]> */
 </script>

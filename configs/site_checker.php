@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) { require_once('ndex.html'); exit; }
+if (!defined('MEH')) { require_once('index.html'); exit; }
 
 $sites = array();
 ### Here is a list of checkable links ###

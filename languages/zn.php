@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
     require('../deny.php');
     exit;
 }
@@ -81,7 +81,7 @@ $lang[71] = '管理员链接';
 $lang[72] = '用户名';
 $lang[73] = 'FTP上传';
 $lang[74] = '密码';
-$lang[75] = 'Rapidleech PlugMod - 上传链接';
+$lang[75] = 'Meh - 上传链接';
 $lang[76] = '<div class="linktitle">上传链接 <strong>%1$s</strong> - <span class="bluefont">大小： <strong>%2$s</strong></span></div> '; // %1$s = file name %2$s = file size
 $lang[77] = '完成';
 $lang[78] = '后退';

@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) { require_once("index.html"); exit; }
+if (!defined('MEH')) { require_once("index.html"); exit; }
 $premium_acc = array();
 
 ### Remove '//' from the beginning and enter your username and password for enable premium account ###

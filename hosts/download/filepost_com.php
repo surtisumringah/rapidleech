@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
     require_once ("index.html");
     exit();
 }

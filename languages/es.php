@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
     require('../deny.php');
     exit;
 }
@@ -80,7 +80,7 @@ $lang[71] = 'Enlace de admin';
 $lang[72] = 'ID de Usuario';
 $lang[73] = 'Subida por FTP';
 $lang[74] = 'Contraseña';
-$lang[75] = 'Rapidleech PlugMod - Enlaces de Subida';
+$lang[75] = 'Meh - Enlaces de Subida';
 $lang[76] = '<div class="linktitle"> Enlaces para <strong>%1$s</strong> - <span class="bluefont"> Tamaño: <strong>%2$s</strong> </span> </div> '; //%1$s = nombre de archivo %2$s = tamaño de archivo
 $lang[77] = 'Terminado';
 $lang[78] = 'Regresar';

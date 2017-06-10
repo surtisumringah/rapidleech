@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
     require('../deny.php');
     exit;
 }
@@ -82,7 +82,7 @@ $lang[71] = 'مديريت - لينك';
 $lang[72] = 'نام-ID';
 $lang[73] = 'FTP اپلود';
 $lang[74] = 'كلمه عبور';
-$lang[75] = 'Rapidleech PlugMod - اپلود لينك';
+$lang[75] = 'Meh - اپلود لينك';
 $lang[76] = '<div class="linktitle">اپلود لينك براي <strong>%1$s</strong> - <span class="bluefont">حجم: <strong>%2$s</strong></span></div>'; // %1$s = file name %2$s = file size
 $lang[77] = 'انجام شد';
 $lang[78] = 'بازگست';

@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) exit;
+if (!defined('MEH')) exit;
 $_T8 = array('v' => 7); // Version of this config file. (Do Not Edit)
 
 /* # Plugin's Settings # */

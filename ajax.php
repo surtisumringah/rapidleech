@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 set_time_limit(0);
-define('RAPIDLEECH', 'yes');
+define('MEH', 'yes');
 define('CLASS_DIR', 'classes/');
 define('CONFIG_DIR', 'configs/');
 require_once(CONFIG_DIR."config.php");
@@ -63,8 +63,8 @@ switch ($_GET['ajax']) {
 
 				if (preg_match('@^http://(www\.)?((adf\.ly)|([jq]\.gs)|([9u]\.bb))/((\d+/.+)|([^/|\r|\n]+))@i', $link, $m)) {
 					$page = curl($m[0]);
-					if (!preg_match("@window\.location = '(((https?:)|(/go/))[^']+)'@i", $page, $match)) 
-						if (!preg_match("@self\.location = '(((https?:)|(/go/))[^']+)'@i", $page, $match)) 
+					if (!preg_match("@window\.location = '(((https?:)|(/go/))[^']+)'@i", $page, $match))
+						if (!preg_match("@self\.location = '(((https?:)|(/go/))[^']+)'@i", $page, $match))
 							preg_match("@var url = '(((https?:)|(/go/))[^']+)'@i", $page, $match);
 					if (!empty($match[1]) && $match[1] != $link) {
 						if (preg_match('@^(?:https?://([^/]+\.)?((adf\.ly)|([jq]\.gs)|([9u]\.bb)))?/go/\w+/([^/|\?]+)@i', $match[1], $b64redir)) $match[1] = base64_decode(urldecode($b64redir[count($b64redir)-1]));
@@ -134,8 +134,8 @@ switch ($_GET['ajax']) {
 
 				if (!$skip && preg_match('/^http:\/\/(www\.)?lnk\.co\/\w+/i', $link, $m)) {
 					$page = curl($m[0],0,0,0);
-					if (!preg_match('/id=\'linkurl\' href="(https?:[^"]+)"/i', $page, $match)) 
-						if (!preg_match("/id='urlholder' value='(https?:[^']+)'/i", $page, $match)) 
+					if (!preg_match('/id=\'linkurl\' href="(https?:[^"]+)"/i', $page, $match))
+						if (!preg_match("/id='urlholder' value='(https?:[^']+)'/i", $page, $match))
 							preg_match('@Location: (https?://[^\r|\n]+)@i', $page, $match);
 					if (!empty($match[1]) && $match[1] != $link) {
 						$link = $match[1];
@@ -149,8 +149,8 @@ switch ($_GET['ajax']) {
 				if (!$skip && preg_match('@^http://(\w+\.)?linkbucks\.com/?(link/[^/\r\n]+)?@i' , $link, $m)) {
 					$page = curl($m[0],0,0,0);
 					sleep(2); // linkbucks now show a flood warning, waiting 2 seconds.
-					if (!preg_match("/(?:(?:Linkbucks)|(?:Lbjs)).TargetUrl = '(https?:[^']+)'/i" , $page , $match)) 
-						if (!preg_match('/<iframe id="content" src="(https?:[^"]+)"/i' , $page , $match)) 
+					if (!preg_match("/(?:(?:Linkbucks)|(?:Lbjs)).TargetUrl = '(https?:[^']+)'/i" , $page , $match))
+						if (!preg_match('/<iframe id="content" src="(https?:[^"]+)"/i' , $page , $match))
 							preg_match("/Location: (https?:.+)/i", $page, $match);
 					if (!empty($match[1]) && $match[1] != $link) {
 						$link = $match[1];
@@ -175,7 +175,7 @@ switch ($_GET['ajax']) {
 
 				if (!$skip && preg_match('@^http://(?:www\.)?((?:linksafe\.me)|(?:safelinking\.net))/d/([^/\W]+(?:/[^/\r\n]+)?)/?@i', $link, $m)) {
 					$page = curl($m[0],0,0,0);
-					if (!preg_match('/Location: (https?:.+)/i', $page, $match)) 
+					if (!preg_match('/Location: (https?:.+)/i', $page, $match))
 						preg_match('/window\.location="(https?:[^"]+)"/i', $page, $match);
 					if (!empty($match[1]) && $match[1] != $m[0]) {
 						$link = $match[1];
@@ -330,7 +330,7 @@ switch ($_GET['ajax']) {
 			if (count($glinks) > 1 && @is_file('audl.php')) {
 				$links = '';
 				$fsize = 0;
-				$afhs = true; // 
+				$afhs = true; //
 				foreach ($glinks as $lnk => $sz) {
 					$links .= "$lnk\n";
 					if (!empty($sz) && $sz > 0) {

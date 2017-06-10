@@ -6,7 +6,7 @@
 @h@		as it's used by many plugins.
 @h@		- Th3-822
 */
-if (!defined('RAPIDLEECH')) exit;
+if (!defined('MEH')) exit;
 
 // Check include
 if (!isset($_T8) || !is_array($_T8) || empty($_T8['domain']) || $_T8['domain'] == 'domain.tld' || empty($_T8['v'])) {

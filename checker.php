@@ -1,5 +1,5 @@
 <?php
-define ( 'RAPIDLEECH', 'yes' );
+define ( 'MEH', 'yes' );
 define ( 'CONFIG_DIR', 'configs/' );
 require_once(CONFIG_DIR.'setup.php');
 define ( 'TEMPLATE_DIR', 'templates/'.$options['template_used'].'/' );
@@ -87,7 +87,6 @@ if (function_exists('apache_get_version')) {
 	}
 }
 ?>
-<center><img src="<?php echo TEMPLATE_DIR; ?>images/logo_pm.gif" alt="RapidLeech PlugMod" border="0" /></center>
 <br />
 <table border="0" width="100%" align="center">
 	<tr>

@@ -1,5 +1,5 @@
 <?php
-if (! defined ( 'RAPIDLEECH' )) {
+if (! defined ( 'MEH' )) {
 	require ('../deny.php');
 	exit ();
 }
@@ -32,14 +32,14 @@ function xmail($from, $to, $subj, $text, $filename, $partSize = FALSE, $method =
 	
 	$subj = "=?UTF-8?Q?" . $subzh . '?=';
 	$un = strtoupper ( uniqid ( time () ) );
-	$head = "From: " . $from . "\n" . "X-Mailer: PHP RapidLeech PlugMod\n" . "Reply-To: " . $from . "\n" . "Mime-Version: 1.0\n" . "Content-Type: multipart/mixed; boundary=\"----------" . $un . "\"\n\n";
+	$head = "From: " . $from . "\n" . "X-Mailer: PHP Meh\n" . "Reply-To: " . $from . "\n" . "Mime-Version: 1.0\n" . "Content-Type: multipart/mixed; boundary=\"----------" . $un . "\"\n\n";
 	$zag = "------------" . $un . "\nContent-Type: text/plain; charset=UTF-8\n" . "Content-Transfer-Encoding: 8bit\n\n" . $text . "\n\n" . "------------" . $un . "\n" . "Content-Type: application/octet-stream; name=\"" . basename ( $filename ) . "\"\n" . "Content-Transfer-Encoding: base64\n" . "Content-Disposition: attachment; filename=\"" . basename ( $filename ) . "\"\n\n";
 	echo '<span id="mailPart.' . md5 ( basename ( $filename ) ) . '"></span><br />';
 	flush ();
 	if ($partSize) {
 		$partSize = round ( $partSize );
 		if ($method == "rfc") {
-			$multiHeadMain = "From: " . $from . "\n" . "X-Mailer: PHP RapidLeech PlugMod\n" . "Reply-To: " . $from . "\n" . "Mime-Version: 1.0\n" . "Content-Type: message/partial; ";
+			$multiHeadMain = "From: " . $from . "\n" . "X-Mailer: PHP Meh\n" . "Reply-To: " . $from . "\n" . "Mime-Version: 1.0\n" . "Content-Type: message/partial; ";
 			$totalParts = ceil ( strlen ( $file ) / $partSize );
 			
 			if ($totalParts == 1) {

@@ -10,7 +10,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 $PHP_SELF = $_SERVER['SCRIPT_NAME'];
-if (!defined('RAPIDLEECH')) define('RAPIDLEECH', 'yes');
+if (!defined('MEH')) define('MEH', 'yes');
 if (!defined('CONFIG_DIR')) define('CONFIG_DIR', 'configs/');
 
 //Default options file
@@ -204,7 +204,6 @@ $(document).ready(function() {
 </style>
 </head>
 <body>
-<center><img src="<?php echo TEMPLATE_DIR; ?>images/logo_pm.gif" alt="RapidLeech PlugMod" border="0" /></center>
 <br />
 <noscript><div class="div_error">This page won't work without JavaScript, please enable JavaScript and refresh the page.</div></noscript>
 <?php
@@ -261,7 +260,7 @@ if (isset($_POST['setup_save']) && $_POST['setup_save'] == 1) {
 
 	$opt = var_export($options, true);
 	$opt = (strpos($opt, "\r\n") === false ? str_replace(array("\r", "\n"), "\r\n", $opt) : $opt);
-	$opt = "<?php\r\nif (!defined('RAPIDLEECH')) {\r\n\trequire_once('index.html');\r\n\texit;\r\n}\r\n\r\n\$options = $opt; \r\n\r\nrequire_once('site_checker.php');\r\nrequire_once('accounts.php');\r\n\r\n\$secretkey =& \$options['secretkey'];\r\n?>";
+	$opt = "<?php\r\nif (!defined('MEH')) {\r\n\trequire_once('index.html');\r\n\texit;\r\n}\r\n\r\n\$options = $opt; \r\n\r\nrequire_once('site_checker.php');\r\nrequire_once('accounts.php');\r\n\r\n\$secretkey =& \$options['secretkey'];\r\n?>";
 	if (!@write_file(CONFIG_DIR."config.php", $opt, 1)) echo '<div class="div_error">It was not possible to write the configuration<br />Set permissions of "configs" folder to 0777 and try again</div>';
 	else {
 		if (is_file(CONFIG_DIR.'config_old.php')) { if (@!unlink(CONFIG_DIR.'config_old.php') && is_file(CONFIG_DIR.'config_old.php')) { '<div class="div_message">It was not possible to delete the old configuration.<br />Manually delete "configs/config_old.php"</div><br />'; } }

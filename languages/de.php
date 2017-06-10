@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
   require('../deny.php');
   exit;
 }
@@ -14,7 +14,7 @@ $lang[6]        =       'Kein Pfad festgelegt, um diese Datei zu speichern';
 $lang[7]        =       'Du bist nicht berechtig von <span class="font-black">%1$s (%2$s)</span> zu leechen';   // %1$s = host name %2$s = host ip
 $lang[8]        =       'Weiterleitung nach:';
 $lang[9]        =       'Konnte die Datei-Liste nicht aktualisieren';
-$lang[10]       =       'Datei <b>%1$s</b> (<b>%2$s</b>) gespeichert!<br />Zeit: <b>%3$s</b><br />Durchschnittsgeschwindigkeit: <b>%4$s KB/s</b><br />';        // %1$s = Dateiname %2$s = Dateigrösse %3$s = time of download %4$s = geschwindigkeit
+$lang[10]       =       'Datei <b>%1$s</b> (<b>%2$s</b>) gespeichert!<br />Zeit: <b>%3$s</b><br />Durchschnittsgeschwindigkeit: <b>%4$s KB/s</b><br />';        // %1$s = Dateiname %2$s = Dateigrï¿½sse %3$s = time of download %4$s = geschwindigkeit
 $lang[11]       =       '<script>mail("Die Datei wurde zu dieser Adresse gesendet<b>%1$s</b>.", "%2$s");</script>';     // %1$s = E-mail addresse %2$s = Dateiname
 $lang[12]       =       'Fehler beim Senden der Datei!';
 $lang[13]       =       'Zur&uuml;ck zur Startseite';
@@ -22,7 +22,7 @@ $lang[14]       =       'Verbindung abgebrochen, Datei gel&ouml;scht.';
 $lang[15]       =       'Neu laden';
 $lang[16]       =       'Bitte wechsle den Debug Modus zu <b>1</b>';
 $lang[17]       =       'Maximale Anzahl (%1$s) von Links wurden erreicht';     // %1$s = Number von maximalen links
-$lang[18]       =       '%1$s Links &uuml;berpr&uuml;ft in %3$s Sekunden. (Methode: <b>%4$s</b>)';      // %1$s = Nummer von links %2$s = Plural form %3$s = seconds %4$s = methode zum links überprüfen
+$lang[18]       =       '%1$s Links &uuml;berpr&uuml;ft in %3$s Sekunden. (Methode: <b>%4$s</b>)';      // %1$s = Nummer von links %2$s = Plural form %3$s = seconds %4$s = methode zum links ï¿½berprï¿½fen
 $lang[19]       =       'en';   // Ende von plural
 $lang[20]       =       'Fehlerhafe Proxy-Adresse';
 $lang[21]       =       'Link';
@@ -79,8 +79,8 @@ $lang[71]       =       'Admin-Link';
 $lang[72]       =       'BENUTZER-ID';
 $lang[73]       =       'FTP-Upload';
 $lang[74]       =       'Passwort';
-$lang[75]       =       'Rapidleech PlugMod - Links Hochladen';
-$lang[76]       =       '<div class="linktitle">Lade Link hoch zu <strong>%1$s</strong> - <span class="bluefont">Gr&ouml;sse: <strong>%2$s</strong></span></div>';      // %1$s = Datei name %2$s = Datei Grösse
+$lang[75]       =       'Meh - Links Hochladen';
+$lang[76]       =       '<div class="linktitle">Lade Link hoch zu <strong>%1$s</strong> - <span class="bluefont">Gr&ouml;sse: <strong>%2$s</strong></span></div>';      // %1$s = Datei name %2$s = Datei Grï¿½sse
 $lang[77]       =       'ERLEDIGT';
 $lang[78]       =       'Zur&uuml;ck';
 $lang[79]       =       'Konnte keine Verbindung zum FTP-Server %1$s herstellen.';          // %1$s = FTP server name
@@ -127,7 +127,7 @@ $lang[119]      =       'PHP5 wird empfohlen, wird aber nicht unbedingt ben&ouml
 $lang[120]      =       '&Uuml;berpr&uuml;fe, ob der Safe-Mode ausgeschaltet ist. Das Script funktioniert nicht wenn der Safe-Mode eingeschaltet ist';
 $lang[121]      =       'Sende Datei <b>%1$s</b>';      // %1$s = Dateiname
 $lang[122]      =       'Splitten wird nicht ben&ouml;tigt. Eine einzige Email schicken';
-$lang[123]      =       'In %1$s Teile splitten';      // %1$s = part Grösse
+$lang[123]      =       'In %1$s Teile splitten';      // %1$s = part Grï¿½sse
 $lang[124]      =       'Methode';
 $lang[125]      =       'Sende Part <b>%1$s</b>';       //%1$s = teil number
 $lang[126]      =       'Splitten wird nicht ben&ouml;tigt. Eine einzige Email schicken';

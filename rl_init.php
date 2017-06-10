@@ -20,7 +20,7 @@ $dev_name = 'Development Stage';
 $rev_num = '43';
 $plusrar_v = '4.2';
 $PHP_SELF = $_SERVER['SCRIPT_NAME'];
-define('RAPIDLEECH', 'yes');
+define('MEH', 'yes');
 define('ROOT_DIR', realpath('./'));
 define('PATH_SPLITTER', ((strpos(ROOT_DIR, '\\') !== false) ? '\\' : '/'));
 define('HOST_DIR', 'hosts/');

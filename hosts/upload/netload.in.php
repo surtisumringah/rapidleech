@@ -5,7 +5,7 @@
 <?php
      // addon debug 
      /*
-define('RAPIDLEECH', 'yes');
+define('MEH', 'yes');
 require_once("http.php");
 require_once("other.php");
 $nn = "\r\n";

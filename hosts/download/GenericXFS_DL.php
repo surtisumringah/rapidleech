@@ -5,7 +5,7 @@
 @h@	 GenericXFS_DL (alpha)
 @h@	Written by Th3-822.
 */
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
 	require_once('index.html');
 	exit();
 }

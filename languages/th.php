@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
     require('../deny.php');
     exit;
 }
@@ -81,7 +81,7 @@ $lang[71] = 'จัดการลิงค์';
 $lang[72] = 'USER-ID';
 $lang[73] = 'อัพโหลด FTP';
 $lang[74] = 'รหัสผ่าน';
-$lang[75] = 'Rapidleech PlugMod - อัพโหลดลิงค์';
+$lang[75] = 'Meh - อัพโหลดลิงค์';
 $lang[76] = '<div class="linktitle">อัพโหลดลิงค์สำหรับ <strong>%1$s</strong> - <span class="bluefont">ขนาด: <strong>%2$s</strong></span></div>'; // %1$s = file name %2$s = file size
 $lang[77] = 'เสร็จเรียบร้อย';
 $lang[78] = 'ย้อนกลับ';

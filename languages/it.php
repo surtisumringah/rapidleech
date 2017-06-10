@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
     require('../deny.php');
     exit;
 }
@@ -80,7 +80,7 @@ $lang[71] = 'Indirizzo di amministrazione';
 $lang[72] = 'ID-UTENTE';
 $lang[73] = 'Upload FTP';
 $lang[74] = 'Password';
-$lang[75] = 'Rapidleech PlugMod - Indirizzi Upload';
+$lang[75] = 'Meh - Indirizzi Upload';
 $lang[76] = '<div class="linktitle">Indirizzi di upload <strong>%1$s</strong> - <span class="bluefont">Dimensione: <strong>%2$s</strong></span></div>'; // %1$s = nome del file %2$s = dimensione file
 $lang[77] = 'Eseguito';
 $lang[78] = 'Torna indietro';

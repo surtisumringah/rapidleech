@@ -1,6 +1,6 @@
 <?php
 
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
     require('../deny.php');
     exit;
 }
@@ -82,7 +82,7 @@ $lang[71] = 'Yönetici Bağlantısı';
 $lang[72] = 'Kullanıcı Adı';
 $lang[73] = 'FTP ile yükleme';
 $lang[74] = 'Şifre';
-$lang[75] = 'Rapidleech PlugMod - Upload Linkler';
+$lang[75] = 'Meh - Upload Linkler';
 $lang[76] = '<div class="linktitle">%1$s<strong> için upload linkleri </strong> - <span class="bluefont">Boyut: <strong>%2$s</strong></span></div>'; // %1$s = file name %2$s = file size
 $lang[77] = 'Tamamlandı';
 $lang[78] = 'Geri Dön';

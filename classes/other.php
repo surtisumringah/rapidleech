@@ -1,5 +1,5 @@
 <?php
-if (!defined('RAPIDLEECH')) {
+if (!defined('MEH')) {
 	require('../deny.php');
 	exit;
 }
@@ -42,7 +42,7 @@ function login_check() {
 			unset($auth);
 		}
 		if (empty($_SERVER['PHP_AUTH_USER']) || !logged_user($options['users'])) {
-			header('WWW-Authenticate: Basic realm="RAPIDLEECH PLUGMOD"');
+			header('WWW-Authenticate: Basic realm="MEH"');
 			header('HTTP/1.0 401 Unauthorized');
 			include('deny.php');
 			exit;
@@ -96,7 +96,7 @@ function pause_download() { // To make sure that the files pointers and streams 
 
 function cut_str($str, $left, $right) {
 	$str = substr(stristr($str, $left), strlen($left));
-	$leftLen = strlen(stristr($str, $right)); 
+	$leftLen = strlen(stristr($str, $right));
 	$leftLen = $leftLen ? -($leftLen) : strlen($str);
 	$str = substr($str, 0, $leftLen);
 	return $str;
@@ -459,7 +459,7 @@ function textarea($var, $cols = 100, $rows = 30, $stop = false, $char = 'UTF-8')
 
 // Get time in miliseconds, like getTime() in javascript
 function jstime() {
-	list($u, $s) = explode(' ', microtime()); 
+	list($u, $s) = explode(' ', microtime());
 	return sprintf('%d%03d', $s, $u*1000);
 }
 
